@@ -2,6 +2,17 @@
 
 利用Node.js與Express，搭配handlebars模板引擎使用。能夠瀏覽網站上的餐廳口袋名單並於點選後進入到詳細資訊的頁面。另外搭配搜尋功能可以從清單中找出符合關鍵字的特定餐廳。
 
+## 產品照片
+
+###我的餐廳清單首頁
+![image](./img/restaurant_list_index.jpg)
+
+###個別餐廳資訊頁面
+![image](./img/restaurant_list_info.jpg)
+
+###搜索功能使用示意
+![image](./img/restaurant_list_search.jpg)
+
 ## 產品功能
 
 1.使用者可以瀏覽餐廳名單，從餐廳小卡得到餐廳名稱、餐廳種類與評分等資訊。
