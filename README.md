@@ -53,7 +53,7 @@ npm install
 node app.js
 ```
 
-5.使用瀏覽器開啟伺服器位置http://localhost:3000/即能測試網頁效果
+5.使用瀏覽器開啟伺服器位置(http://localhost:3000/)即能測試網頁效果
 
 ## 開發人員
 
