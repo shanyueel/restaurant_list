@@ -26,14 +26,14 @@ app.get('/', (req, res) => {
 //search function
 app.get('/search', (req, res) => {
   const keyword = req.query.keyword
-  const restaurantsFound = restaurantList.filter(restaurant => restaurant.name.toLowerCase().includes(keyword.toLowerCase()))
+  const restaurantsFound = restaurantList.filter(restaurant => restaurant.name.toLowerCase().includes(keyword.toLowerCase()) || restaurant.category.toLowerCase().includes(keyword.toLowerCase()))
 
   res.render('index', { restaurants: restaurantsFound, keyword: keyword })
 })
 
 //restaurant detail info display
 app.get('/restaurants/:restaurant_id', (req, res) => {
-  const restaurant = restaurantList.find(movie => movie.id.toString() === req.params.restaurant_id)
+  const restaurant = restaurantList.find(restaurant => restaurant.id.toString() === req.params.restaurant_id)
 
   res.render('show', { restaurant: restaurant })
 })
